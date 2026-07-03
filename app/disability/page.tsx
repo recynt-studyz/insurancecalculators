@@ -124,6 +124,10 @@ export default function DisabilityPage() {
             <FAQ questions={faqs} />
           </div>
 
+          <p className="text-xs text-gray-400 dark:text-gray-500 text-center pb-6 px-2">
+            This calculator provides estimates for educational purposes only. Actual disability insurance premiums and benefit amounts vary based on your specific situation, occupation, insurer underwriting criteria, elimination period, benefit period, and policy factors. Consult a licensed insurance agent or broker for accurate quotes and coverage recommendations.
+          </p>
+
           <div className="pb-6">
             <AdBanner slot="1515151515" />
           </div>

@@ -124,6 +124,10 @@ export default function DeductiblePage() {
             <FAQ questions={faqs} />
           </div>
 
+          <p className="text-xs text-gray-400 dark:text-gray-500 text-center pb-6 px-2">
+            This calculator provides estimates for educational purposes only. Actual insurance premium savings from deductible changes vary based on your specific insurer, policy, location, coverage type, and underwriting factors. Consult a licensed insurance agent or broker for accurate quotes and coverage recommendations.
+          </p>
+
           <div className="pb-6">
             <AdBanner slot="2424242424" />
           </div>

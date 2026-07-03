@@ -124,6 +124,10 @@ export default function HealthInsurancePage() {
             <FAQ questions={faqs} />
           </div>
 
+          <p className="text-xs text-gray-400 dark:text-gray-500 text-center pb-6 px-2">
+            This calculator provides estimates for educational purposes only. Actual health insurance premiums and subsidy eligibility vary based on your specific situation, insurer, state marketplace, income, and policy factors. Consult a licensed insurance agent or broker for accurate quotes and coverage recommendations.
+          </p>
+
           <div className="pb-6">
             <AdBanner slot="1212121212" />
           </div>
