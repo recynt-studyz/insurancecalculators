@@ -120,6 +120,68 @@ export default function RentersPage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How Renters Insurance Premiums Are Calculated</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Renters insurance premiums are calculated from a base rate tied to your personal property coverage amount, then adjusted for your location&apos;s risk profile and any optional riders you add. The three main coverage components — personal property, liability, and additional living expenses — are bundled together, with ALE typically set at 20–30% of your personal property limit automatically. The core formula is:
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Premium = ($180 × Property Value ÷ $30,000) × Location Factor × Crime Factor + Liability Add-On + Optional Riders
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                The base rate of $180/year per $30,000 of personal property reflects national average pricing. Location type adjusts this up for urban and coastal areas (higher theft and weather claims) and down for rural areas. Crime rate is applied as a separate multiplier — a high-crime urban ZIP code might carry a 1.4× surcharge relative to a low-crime suburban neighborhood.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Liability coverage is the most undervalued component of renters insurance. If a guest is injured in your apartment and sues you, your landlord&apos;s policy provides zero protection for you personally. Your renters insurance liability coverage pays legal defense costs and damages up to your policy limit. The premium difference between $100,000 and $300,000 of liability coverage is typically only $5–$10 per year — making the higher limit almost always the right choice.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Alex in a Suburban Apartment</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Alex rents a 2-bedroom apartment in a suburban Chicago suburb. After taking a home inventory, he estimates his personal belongings are worth $32,000 (furniture, laptop, TV, bicycle, clothing, kitchen appliances). He wants $300,000 in liability coverage and adds an electronics rider for his camera equipment.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">Base rate ($180 × $32,000 ÷ $30,000):</span><span>$192/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Location (suburban, moderate crime):</span><span>× 1.10</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Base adjusted:</span><span>$211/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Liability add-on ($300,000 coverage):</span><span>+$18/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Electronics/camera rider:</span><span>+$24/year</span></div>
+                <div className="flex justify-between gap-4 border-t border-gray-200 dark:border-gray-600 pt-1.5 text-blue-700 dark:text-blue-400 font-bold"><span>Estimated Annual Premium:</span><span>≈ $253/year ($21/month)</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                For $21/month, Alex has $32,000 of personal property coverage, $300,000 of liability protection, and specialized coverage for his camera gear. If his apartment were broken into and his laptop ($1,200), TV ($800), and bicycle ($900) were stolen, a single claim would pay out approximately $2,500 — nearly a decade of premiums recovered in one event. If his landlord requires proof of renters insurance, most policies can provide a certificate of insurance directly to the property management company. Bundling this policy with an auto insurance policy from the same insurer typically saves 5–15% on both.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors That Affect Your Renters Insurance Premium</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Personal Property Coverage Amount</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The value of your insured belongings is the primary driver of your renters insurance premium. Most renters significantly underestimate what they own — a realistic home inventory often reaches $25,000–$40,000 once you account for furniture, electronics, clothing, kitchen appliances, bicycles, and sports equipment. Choosing too little coverage is the most common renters insurance mistake; you can only be reimbursed up to your coverage limit after a total loss.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Location Type and Crime Rate</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Urban renters typically pay more than suburban or rural renters due to higher rates of theft, vandalism, and weather-related claims. Your specific ZIP code&apos;s crime statistics directly influence your premium. High-crime areas can add 20–50% to the base rate. Moving to a building with secure entry, on-site security, or in a lower-crime neighborhood can meaningfully reduce your annual premium at renewal.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Liability Coverage Limit</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The liability component of renters insurance is remarkably inexpensive relative to the protection it provides. The premium difference between $100,000 and $300,000 of liability coverage is typically $5–$12 per year. Given that a single slip-and-fall injury claim or dog bite lawsuit can easily exceed $100,000 in legal costs and damages, selecting the highest available liability limit is almost always the right financial decision for the minimal additional cost.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Optional Riders</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Standard renters policies have sub-limits for certain high-value items — typically $1,500–$2,500 for jewelry, $1,500 for firearms, and varying limits for electronics. If you own items exceeding these sub-limits, a scheduled personal property rider (floater) provides full replacement cost coverage for listed items. Electronics riders, identity theft coverage, and water backup protection are common add-ons that cost $5–$15/month each and fill important coverage gaps.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Multi-Policy Bundling</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Bundling your renters insurance with auto insurance from the same company is one of the easiest ways to reduce both premiums simultaneously. Multi-policy discounts typically range from 5–15% on your auto policy and may also reduce your renters premium. Since renters insurance premiums are already low ($12–$25/month for most renters), the bundling discount on your auto policy often saves more in absolute dollars than the renters premium itself.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>

@@ -120,6 +120,71 @@ export default function HealthInsurancePage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How ACA Health Insurance Premiums Are Calculated</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                ACA marketplace health insurance premiums are set by federal rating rules that allow insurers to vary prices by only four factors: age, tobacco use, geographic area (rating region), and plan tier (Bronze, Silver, Gold, Platinum). Health status, medical history, and sex cannot be used — a major departure from pre-ACA underwriting. The premium calculation works as follows:
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Gross Premium = Base Tier Rate × Age Factor × Smoker Multiplier × Family Size Multiplier
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Net Premium = Gross Premium − Premium Tax Credit (Subsidy)
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Age factors under ACA rules allow insurers to charge older enrollees up to 3 times more than younger ones. A 64-year-old pays the legal maximum of 3× what a 21-year-old pays for the same plan. Tobacco surcharges can add up to 50% to the premium (some states prohibit tobacco rating). The premium tax credit — the ACA subsidy — is calculated by capping your required contribution at a percentage of your household income, with the federal government paying the difference up to the cost of the benchmark Silver plan.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Cost-Sharing Reductions (CSRs) are an additional benefit available exclusively on Silver plans for enrollees earning 100–250% of FPL. CSRs reduce your deductibles, copays, and out-of-pocket maximum — effectively giving you a Silver plan with Gold or Platinum level cost-sharing at a Silver premium. If you qualify for CSRs, a Silver plan almost always provides the best overall value even if a Bronze plan has a lower monthly premium.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Rachel, Single at 36</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Rachel is 36 years old, a non-smoker shopping for individual ACA coverage. Her household income is $46,000 per year. The 2026 Federal Poverty Level for a single person is approximately $15,060. Rachel&apos;s income is 305% of FPL ($46,000 ÷ $15,060).
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">Silver base rate (age 21):</span><span>$500/month</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Age factor (age 36 ≈ 1.45×):</span><span>$725/month gross</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Income at 305% FPL — contribution cap:</span><span>~8.5% of income</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Max required contribution (8.5% × $46,000 ÷ 12):</span><span>$326/month</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Premium tax credit (subsidy):</span><span>$725 − $326 = $399/month</span></div>
+                <div className="flex justify-between gap-4 border-t border-gray-200 dark:border-gray-600 pt-1.5 text-blue-700 dark:text-blue-400 font-bold"><span>Rachel&apos;s Net Monthly Premium:</span><span>≈ $326/month</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                If Rachel chose a Gold plan instead (gross premium ≈ $870/month at her age), her subsidy is still capped at $399, so she would pay $870 − $399 = $471/month — about $145 more per month for lower deductibles and out-of-pocket costs. Whether the Gold plan is worth it depends on Rachel&apos;s expected healthcare use: if she has regular prescriptions or planned procedures, the lower cost-sharing of Gold may more than offset the higher premium. If she is healthy and rarely sees a doctor, the Silver plan wins on total annual cost.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors That Affect Your Health Insurance Premium</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Age</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">ACA rules allow insurers to charge up to 3× as much for a 64-year-old as a 21-year-old. Premiums increase at approximately 3% per year of age from 21 to 64. This makes age the most significant pricing factor within an ACA plan — though unlike pre-ACA health insurance, your current health status cannot increase your premium regardless of medical history or pre-existing conditions.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Household Income and Subsidy Eligibility</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Your income relative to the Federal Poverty Level determines whether you qualify for premium tax credits and how large those credits are. Households earning 100–400% FPL receive subsidies that cap your premium at 0–8.5% of income (exact percentage varies by income level). Recent legislation has extended subsidies above 400% FPL, so even households earning $60,000–$80,000+ may qualify for meaningful savings. Enter your income accurately in the calculator to see your estimated subsidy.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Plan Tier (Metal Level)</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Bronze, Silver, Gold, and Platinum tiers represent how costs are split between you and the insurer. Bronze covers ~60% of expected costs (lowest premium, highest out-of-pocket exposure); Platinum covers ~90% (highest premium, lowest out-of-pocket). The right tier depends on your expected healthcare use. Healthy, infrequent users typically save money with Bronze; frequent users with regular medications or planned procedures often save more with Gold or Platinum despite higher premiums.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Tobacco Use</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">ACA plans can charge tobacco users up to 50% more in premium. Some states prohibit tobacco surcharges; others limit them. This surcharge applies regardless of your health status — it is based solely on self-reported tobacco use within the past six months. Importantly, the tobacco surcharge is NOT subsidized by premium tax credits, meaning the full surcharge comes out of your pocket even if you otherwise qualify for significant subsidy dollars.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Family Size</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Each additional person on your health insurance plan adds to the gross premium. ACA rating rules use individual age-based pricing for up to three children and then cover additional children under 21 at no extra cost. Family premiums are capped — you pay for a maximum of three children regardless of family size. Understanding how dependents affect your premium is important when comparing employer-sponsored coverage versus ACA marketplace plans, since employer plans often subsidize dependent coverage while ACA credits are tied to household income and family size.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>

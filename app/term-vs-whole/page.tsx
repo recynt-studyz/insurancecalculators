@@ -120,6 +120,71 @@ export default function TermVsWholePage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How the Term vs. Whole Life Comparison Works</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                This calculator performs two calculations side by side: the cost of a term life policy for your chosen coverage amount, and the cost of an equivalent whole life policy. It then projects what would happen financially if you chose the less expensive term policy and invested the monthly premium difference in a diversified investment account over the same period.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Whole Life Premium ≈ Term Premium × 8 to 10
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Investment Value = Annual Savings × ((1 + r)ⁿ − 1) ÷ r
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                The second formula is the future value of an annuity — it calculates how much an annual contribution grows at a constant return rate over n years. For example, saving $3,600/year at 7% for 30 years produces approximately $340,000 in investment value. This is the &quot;invest the difference&quot; side of the &quot;buy term and invest the difference&quot; strategy.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                The 8–10× whole life multiplier reflects real-world pricing: whole life insurance bundles a term-equivalent death benefit with a savings component (cash value), and the insurer prices in long-term mortality risk, guaranteed cash value growth, agent commissions (which are much higher for whole life than term), and profit. The cash value in a whole life policy grows slowly in early years and at a modest guaranteed rate of 2–4% annually — far below historical market returns for diversified equity portfolios.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Sandra, Age 35</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Sandra is 35 years old, female, in excellent health, and a non-smoker. She needs $500,000 in life insurance coverage and is deciding between a 30-year term policy and a permanent whole life policy. She plans to invest any premium savings in a low-cost index fund earning an average of 7% annually.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">30-year term premium (female, excellent, 35):</span><span>≈ $28/month ($336/year)</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Whole life premium (equivalent coverage):</span><span>≈ $250/month ($3,000/year)</span></div>
+                <div className="flex justify-between gap-4 font-semibold"><span>Annual premium savings by choosing term:</span><span>$2,664/year</span></div>
+                <div className="flex justify-between gap-4 border-t border-gray-200 dark:border-gray-600 pt-1.5"><span className="font-semibold">30-year total term cost:</span><span>$10,080</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">30-year total whole life cost:</span><span>$90,000</span></div>
+                <div className="flex justify-between gap-4 text-blue-700 dark:text-blue-400 font-bold pt-0.5"><span>Term + invested difference at 7% (30 yrs):</span><span>≈ $266,000 portfolio</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                By choosing term and investing the $2,664 annual savings in index funds at 7%, Sandra builds approximately $266,000 by age 65. Her whole life policy&apos;s cash value over 30 years might reach $80,000–$110,000 at typical guaranteed rates — roughly $160,000 less wealth. Sandra also retained $500,000 of death benefit protection throughout the 30 years with the term policy. The &quot;buy term and invest the difference&quot; strategy wins numerically in nearly every realistic scenario for working-age adults who have the discipline to actually invest the savings.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors in the Term vs. Whole Life Decision</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Age and Health at Policy Issuance</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Both term and whole life premiums are set at issuance and remain level for the policy term. The younger and healthier you are when you buy, the lower your rate — and that rate is locked in. A 30-year-old in excellent health paying $25/month for a $500,000 term policy continues paying $25/month for all 30 years, even if they develop serious health conditions at 45 or 55. This rate lock is one of the most valuable features of any life insurance policy.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Investment Return Assumption</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The &quot;invest the difference&quot; strategy&apos;s success depends on the actual investment return you earn. At 4%, the advantage over whole life is modest; at 8% or higher, term wins by a very large margin. Historical average annual returns of diversified US equity index funds have been approximately 7–10% over long periods, though past returns do not guarantee future results. The comparison in this calculator uses your input return assumption — try different rates to see how the outcome changes.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Coverage Duration and Permanent Need</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">For most people, the need for life insurance is temporary — it protects your family during the years you are building wealth, carrying debt, and raising dependents. Once your mortgage is paid, children are independent, and retirement savings are substantial, the death benefit need diminishes or disappears entirely. If you have a genuine permanent need — such as estate planning to pay estate taxes, funding a special needs trust, or business succession — whole life or universal life may have a legitimate place in your financial plan.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Whole Life Cash Value — What It Actually Provides</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Whole life cash value grows tax-deferred and can be borrowed against without triggering taxes or penalties. However, the guaranteed growth rate is typically 2–4% — below long-term inflation-adjusted stock market returns. Critically, the insurer generally keeps the cash value when you die; your beneficiaries receive only the face value death benefit. This means the cash value is essentially a savings account that belongs to the insurance company unless you access it while living through withdrawals or policy loans.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">The Discipline Factor</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">&quot;Buy term and invest the difference&quot; only works if you actually invest the savings consistently every month for decades. If you are likely to spend the premium difference rather than invest it, the forced savings component of whole life has real behavioral value. This is the strongest practical argument for whole life insurance — not its financial returns, but its role as an automatic, protected savings mechanism for people who lack investing discipline.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>

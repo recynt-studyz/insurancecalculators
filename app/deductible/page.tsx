@@ -120,6 +120,72 @@ export default function DeductiblePage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How the Deductible Break-Even Analysis Works</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                The deductible decision is a straightforward math problem: you are trading a known, recurring annual savings (lower premium) for an increased financial risk that only materializes when you file a claim. The break-even analysis calculates how many claim-free years it takes before your cumulative premium savings exceed the extra out-of-pocket cost you would face on a single claim. The core formulas are:
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Annual Savings = Current Annual Premium − Higher Deductible Annual Premium
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Break-Even (years) = (Higher Deductible − Current Deductible) ÷ Annual Savings
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                The break-even year is your point of financial indifference: go longer than the break-even period without a claim and you come out ahead with the higher deductible. File a claim before break-even and the lower deductible would have saved you money. Most financial planners use a 3-year break-even as the threshold for recommending a higher deductible — if you recoup the extra risk within 3 years of savings, the math favors raising the deductible.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                The critical constraint that math alone cannot capture is your emergency fund. Even a highly favorable break-even analysis is irrelevant if you could not comfortably pay the higher deductible out of pocket today. A deductible is a contingent liability — it can come due at the worst possible time (alongside a job loss, medical bill, or other financial hardship). Your emergency fund must be large enough to absorb the deductible without forcing you into debt.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Kevin&apos;s Auto Insurance Deductible Decision</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Kevin currently pays $1,560/year for auto insurance with a $500 collision deductible. His insurer quotes $1,230/year for a $1,000 deductible on the same policy. He has $8,500 in his emergency fund and has filed only one minor claim in the past 9 years of driving.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">Current premium ($500 deductible):</span><span>$1,560/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">New premium ($1,000 deductible):</span><span>$1,230/year</span></div>
+                <div className="flex justify-between gap-4 font-semibold"><span>Annual savings:</span><span>$330/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Extra out-of-pocket risk per claim:</span><span>$500</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Break-even period:</span><span>$500 ÷ $330 = 1.5 years</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Emergency fund covers $1,000 deductible?</span><span>Yes ($8,500)</span></div>
+                <div className="flex justify-between gap-4 text-blue-700 dark:text-blue-400 font-bold pt-0.5 border-t border-gray-200 dark:border-gray-600"><span>Recommendation:</span><span>Raise the deductible</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Kevin breaks even in just 18 months — well under the 3-year threshold. His emergency fund comfortably covers the $1,000 deductible. Over 10 claim-free years, he saves $3,300 in total premiums. Even if he files one claim in year 4, his net position is ($330 × 4 years) − $500 extra = +$820 ahead. The higher deductible is the correct financial decision here given his clean record, adequate savings, and fast break-even. In contrast, if Kevin had only $600 in savings, the analysis would flip — the math might favor the higher deductible, but his inability to cover the deductible comfortably makes the lower deductible the right choice for his financial situation.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors in the Deductible Decision</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Size of Annual Premium Savings</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The premium reduction from raising your deductible varies by insurer, policy type, and state. For auto collision coverage, moving from $500 to $1,000 typically saves 10–15%; moving from $500 to $2,000 can save 20–30%. Homeowners insurance yields less savings per deductible dollar because a large portion of the premium covers liability and other components unaffected by the deductible. Always get an actual quote from your insurer before making the decision — the real numbers are what matter.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Emergency Fund Size</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Your deductible represents the maximum out-of-pocket payment you must make before your insurance kicks in on any single claim. Never select a deductible you could not pay comfortably today without going into debt. Financial advisors recommend keeping an emergency fund of 3–6 months of living expenses — if your fund is at that level, higher deductibles are generally accessible. If your fund is thin, prioritize building it before raising your deductibles.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Personal Claim Frequency</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">A higher deductible benefits policyholders who file claims infrequently. If you have filed multiple claims in recent years, a lower deductible may be more appropriate — both because you are more likely to file again, and because frequent claims can affect your premium and insurability regardless of deductible level. For auto insurance specifically, consider whether minor incidents are better paid out of pocket to avoid claim-related rate surcharges that may cost more over 3 years than the incident itself.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Insurance Type and How Deductibles Apply</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Auto deductibles apply separately to each claim — you could pay your deductible twice in a single year if you file two claims. Home insurance deductibles also apply per claim; many coastal policies have a separate, higher percentage-based deductible for wind and hail. Health insurance deductibles accumulate throughout the year and reset annually; once met, you pay coinsurance until you reach your out-of-pocket maximum. Understanding your specific policy structure is essential to interpreting break-even analysis correctly.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">The 3-Year Break-Even Threshold</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">A break-even of 1–2 years is highly favorable — the premium savings recoup the extra risk quickly and nearly guarantee you come out ahead over any multi-year period. A break-even of 3 years sits at the generally accepted boundary for a sound financial decision. A break-even of 4–5 or more years suggests the premium savings are too small relative to the increased out-of-pocket risk, and you may be better served by keeping your current deductible or shopping for a different insurer that offers more competitive pricing on both deductible tiers.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>

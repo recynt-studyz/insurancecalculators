@@ -120,6 +120,71 @@ export default function DisabilityPage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How Disability Insurance Needs and Premiums Are Calculated</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                This calculator first determines how much monthly benefit you need, then estimates the premium for that benefit. The recommended benefit target is 65% of your gross monthly income — the widely accepted income replacement standard used by financial planners and most disability insurers. Benefits are typically tax-free when you pay premiums with after-tax dollars, so 65% of gross income generally approximates 85–90% of your take-home pay.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Target Benefit = Gross Monthly Income × 0.65 − Existing Employer Coverage
+              </div>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                LTD Monthly Premium ≈ Target Benefit × 2.5% × Occupation Factor × Elimination Factor × Benefit Period Factor
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Occupation is a critical pricing factor. Insurers assign occupation classes (typically 1–6 or A–F) based on the injury risk and the likelihood of return to work after a disability. A sedentary office professional (Class 6/A) pays the lowest rates. A general contractor or equipment operator (Class 2/D) pays 2–3 times more for the same monthly benefit, because both the frequency and severity of disability claims are higher in physical occupations.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                The elimination period (waiting period) and benefit period are the two levers you have to adjust premium. A 90-day elimination period costs 15–20% less than a 30-day period, because the insurer only pays if you are disabled longer than 90 days — covering shorter illnesses falls on your emergency fund. A benefit period to age 65 costs significantly more than a 5-year benefit period but provides far superior protection for permanent or long-duration disabilities.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: Jennifer, Graphic Designer at 41</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Jennifer is 41, a graphic designer earning $7,200 per month gross ($86,400/year). Her employer provides a group LTD policy covering 40% of base salary ($2,880/month). She selects a 90-day elimination period and a benefit period to age 65, classifying as an office professional (Class 5/B occupation).
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">Gross monthly income:</span><span>$7,200</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Target benefit (65%):</span><span>$4,680/month</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Minus employer LTD:</span><span>−$2,880/month</span></div>
+                <div className="flex justify-between gap-4 font-semibold"><span>Coverage gap (additional LTD needed):</span><span>$1,800/month</span></div>
+                <div className="flex justify-between gap-4 border-t border-gray-200 dark:border-gray-600 pt-1.5"><span className="font-semibold">LTD premium (2.5% × $1,800 × 0.85 × 0.85):</span><span>≈ $32/month</span></div>
+                <div className="flex justify-between gap-4 text-blue-700 dark:text-blue-400 font-bold pt-0.5"><span>Total income protection (employer + personal):</span><span>$4,680/month (65%)</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                At $32/month for her supplemental policy, Jennifer is protecting $1,800/month of income — an insurance cost of under 2% of the benefit. If she became permanently disabled at 41 and collected LTD benefits until age 65, her personal policy alone would pay out $518,400 in total benefits. Considered this way, disability insurance provides extraordinary financial leverage for a modest monthly premium. Without this coverage, Jennifer&apos;s employer policy would leave her $1,800/month short — $21,600/year below her target income replacement through no fault of her own.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors That Affect Disability Insurance Premiums</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Occupation Class</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Occupation is the primary pricing variable in disability insurance. Insurers assign occupations to classes based on injury risk, duty demands, and historical claims experience. A surgeon, attorney, or accountant (high-income professional with low physical risk) receives the best (Class 6) rates. A construction worker, farmer, or logger receives the least favorable (Class 1–2) rates and may have monthly benefit caps applied. Your occupation class can create a 2–3x difference in premium for the same benefit amount.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Elimination Period (Waiting Period)</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The elimination period is how long you must be disabled before benefits begin. A 30-day elimination period costs more because the insurer covers disabilities lasting as little as a month. A 90-day elimination period saves 15–20% and is the sweet spot for people with 3+ months of emergency savings. A 180-day elimination period saves more but requires a larger emergency fund to cover the gap. Coordinate your elimination period with your available liquid assets and any short-term disability coverage.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Benefit Period</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">A benefit period to age 65 provides coverage for the longest possible duration but costs the most in premium. Two-year and five-year benefit periods are less expensive but may leave you unprotected if you suffer a disability lasting longer. The average LTD claim exceeds 2.5 years, and many serious conditions — cancer, musculoskeletal disorders, mental health conditions — can result in disabilities lasting a decade or more. A to-age-65 benefit period, while more expensive, is the only option that fully protects your income-earning potential.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Monthly Benefit Amount</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Disability insurers will not insure more than 60–70% of your pre-disability income, regardless of how much coverage you want. This ensures you always have a financial incentive to return to work. Premiums are proportional to your monthly benefit — the more coverage you need, the more you pay. If your employer provides group LTD, you only need to supplement the gap, which significantly reduces your personal policy cost.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Definition of Disability</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">The policy&apos;s definition of disability significantly affects both your claim eligibility and your premium. An &quot;own occupation&quot; definition pays benefits if you cannot perform the specific duties of your current occupation — even if you can work in a different field. An &quot;any occupation&quot; definition only pays if you cannot perform any work. Own-occupation policies are more expensive but far superior for professionals and skilled workers whose income depends on specific abilities. A surgeon with an own-occupation policy who loses fine motor skills in one hand would receive full benefits even if she could technically work as a medical consultant.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>

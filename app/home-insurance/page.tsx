@@ -120,6 +120,70 @@ export default function HomeInsurancePage() {
             </p>
           </div>
 
+          <div className="space-y-10 mb-10">
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">How Home Insurance Premiums Are Calculated</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Homeowners insurance is priced by starting with your home&apos;s replacement cost — the cost to rebuild it from the ground up at current local construction rates — and applying a base rate of approximately 0.5% of that value per year. The insurer then multiplies this base premium by a series of risk factors specific to your home and location. The core formula is:
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 font-mono text-sm text-gray-700 dark:text-gray-300 mb-3 overflow-x-auto">
+                Premium = Home Value × 0.5% × Location Factor × Age Factor × Construction Factor × Roof Factor × Security Discount × Deductible Factor
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                Location is the most powerful variable. A home in coastal Florida or a hurricane-prone Gulf Coast area might carry a location factor of 1.8–2.5x compared to a standard Midwest suburban home. Similarly, wildfire-risk zones in California and tornado-prone areas of the Great Plains carry significantly elevated location factors. Your roof&apos;s age and material matter because the roof is the most common source of homeowners claims — insurers may not cover a roof over 20–25 years old, or may require a separate wind/hail deductible.
+              </p>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                Note that market value and replacement cost are different numbers. A home&apos;s market value includes land, which cannot be destroyed and does not need to be insured. Replacement cost is purely construction cost — for an older home in a high-cost-of-labor market, replacement cost may actually exceed market value. Most insurers include an inflation guard provision that automatically adjusts your dwelling coverage limit each year to keep pace with rising construction costs.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Worked Example: The Chen Family&apos;s Home in Texas</h2>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed mb-3">
+                The Chen family owns a 1,900 sq ft home in suburban Dallas with a replacement cost of $340,000. The home was built 12 years ago with a wood frame construction, a 7-year-old asphalt shingle roof, and no pool. They have a basic security system and are choosing a $1,000 deductible.
+              </p>
+              <div className="bg-gray-50 dark:bg-gray-800/60 rounded-xl px-5 py-4 text-sm text-gray-700 dark:text-gray-300 mb-4 space-y-1.5">
+                <div className="flex justify-between gap-4"><span className="font-semibold">Base premium ($340,000 × 0.5%):</span><span>$1,700/year</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Location (suburban TX, tornado risk):</span><span>× 1.15</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Home age (12 years):</span><span>× 1.08</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Wood frame construction:</span><span>× 1.00</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Roof age (7 years):</span><span>× 1.04</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Security system discount:</span><span>× 0.95</span></div>
+                <div className="flex justify-between gap-4"><span className="font-semibold">Deductible ($1,000):</span><span>× 0.95</span></div>
+                <div className="flex justify-between gap-4 border-t border-gray-200 dark:border-gray-600 pt-1.5 text-blue-700 dark:text-blue-400 font-bold"><span>Estimated Annual Premium:</span><span>≈ $1,965/year ($164/month)</span></div>
+              </div>
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed">
+                If the Chens add a swimming pool, the liability surcharge typically adds $50–$150/year. If they replaced their roof last year, the roof factor drops from 1.04 to 1.0 and saves them about $70/year. Their standard coverage includes $340,000 dwelling, $255,000 personal property (75%), $100,000 liability, and $68,000 in Additional Living Expenses. When they compare quotes from multiple insurers, they should verify all four coverage components are identical, not just the premium — companies often quote different amounts to appear cheaper.
+              </p>
+            </div>
+
+            <div>
+              <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Key Factors That Affect Your Home Insurance Premium</h2>
+              <ul className="space-y-5">
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Location and Geographic Risk</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Where your home is located is the dominant factor in homeowners insurance pricing. Coastal properties face hurricane and flood risk; Great Plains homes face tornado exposure; Western states face wildfire risk. Homes in high-risk zones can pay 40–150% more than comparable homes in standard risk areas. Proximity to a fire station also matters — homes within 5 miles of a staffed fire station receive lower rates.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Replacement Cost of the Dwelling</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Your dwelling coverage should equal the cost to rebuild your home, not its market value. Replacement cost is based on local construction costs per square foot, which vary dramatically by region — rebuilding a 2,000 sq ft home might cost $150/sq ft in rural Kansas but $350/sq ft in coastal California. Underinsuring your home is a dangerous mistake: if your home is insured for less than 80% of its replacement cost, most policies reduce claim payouts proportionally through a coinsurance clause.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Home Age and Construction Type</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Older homes cost more to insure because they have a higher risk of outdated wiring, plumbing, and HVAC systems failing. Masonry (brick, stone) construction is more fire-resistant than wood frame and typically earns a 5–15% premium discount. A home with knob-and-tube wiring or a fuse box rather than a circuit breaker panel may be surcharged or even declined for coverage until updates are made.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Roof Age and Material</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Roofs are the most common source of homeowners insurance claims. A new asphalt shingle roof earns the best rates; a 15-year-old roof carries a surcharge; insurers may refuse to write new policies on roofs over 20–25 years. Impact-resistant roofing materials (Class 4 shingles) can earn discounts of 10–30% in hail-prone states. Replacing your roof is the single home improvement most likely to lower your insurance premium.</p>
+                </li>
+                <li>
+                  <p className="font-semibold text-gray-800 dark:text-gray-200 mb-1">Claims History and Deductible</p>
+                  <p className="text-gray-600 dark:text-gray-400 leading-relaxed">Filing multiple claims in a short period can result in premium surcharges or non-renewal. Insurance is designed for large, unexpected losses — not routine maintenance. Your deductible directly impacts your premium: raising from $1,000 to $2,500 typically saves 5–10% per year on your homeowners policy. In coastal states, many policies now include a separate, higher hurricane or wind/hail deductible expressed as a percentage of your dwelling coverage (typically 1–5%).</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+
           <div className="pb-10">
             <FAQ questions={faqs} />
           </div>
