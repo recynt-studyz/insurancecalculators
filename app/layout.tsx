@@ -52,6 +52,18 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             __html: `(function(){try{var t=localStorage.getItem('ic-theme');if(t==='dark'){document.documentElement.classList.add('dark')}}catch(e){}})()`,
           }}
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-PNL8LRC2ST"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-PNL8LRC2ST');
+          `}
+        </Script>
       </head>
       <body className="min-h-full flex flex-col bg-white dark:bg-[#0f172a] text-gray-900 dark:text-[#e2e8f0]" style={{ fontFamily: 'var(--font-inter), sans-serif' }}>
         {children}
